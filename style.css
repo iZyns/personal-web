@@ -351,7 +351,7 @@ form textarea {
     border-radius: 6px;
 }
 
-form btn2 {
+form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
@@ -371,7 +371,7 @@ form btn2 {
     color: #D4AF37;
 }
 
-#span msg {
+#msg {
     color: #61b752;
     margin-top: -40px;
     display: block;
