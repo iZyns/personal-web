@@ -11,8 +11,13 @@
 </head>
 
 <body>
-    <!-- <div class="loader ">
-    </div> -->
+    <div id="loading-screen">
+        <div id="loading-animation"></div>
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <div id="loading-message">Loading...</div>
+    </div>
     <div id="header">
         <div class="container">
             <nav>
@@ -205,6 +210,11 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+    </script>
+    <script>
+        window.addEventListener("load", function () {
+            document.getElementById("loading-screen").style.display = "none";
+        });
     </script>
 </body>
 
