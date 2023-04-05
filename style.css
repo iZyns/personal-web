@@ -43,7 +43,7 @@ nav {
 
 nav.sticky {
     padding: 5px 100px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(38,38,38,0.5);
 }
 
 .logo {
@@ -175,7 +175,7 @@ nav ul li a:hover::after {
 }
 
 /*-------------services------------------*/
-#services {
+/* #services {
     padding: 30px 0;
 }
 
@@ -217,7 +217,7 @@ nav ul li a:hover::after {
 .services-list div:hover {
     background-color: #D4AF37;
     transform: translateY(-10px);
-}
+} */
 
 /*---------------portfolio---------------*/
 #portfolio {
