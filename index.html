@@ -21,8 +21,9 @@
     </div>
     <div id="header">
         <div class="container">
-            <nav>
-                <img src="images/Screenshot_2022-12-07_115840-removebg-preview-removebg-preview.png" class="logo">
+            <nav id="nav">
+                <a href="#header"><img src="images/Screenshot_2022-12-07_115840-removebg-preview-removebg-preview.png"
+                        class="logo"></a>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -82,13 +83,6 @@
                                 <i class="devicon-apache-plain"></i>
                             </p>
                         </div>
-                        <!-- <ul>
-                            <li><span>Languages</span><br>JavaScript | Java | C++</li>
-                            <li><span>Other</span><br>Time Management | Work under pressure | individual and
-                                teamwork |
-                                Data Structures and Advanced Data Structures | Algorithms | OOP | Curiosity</li>
-                        </ul> -->
-
                     </div>
 
                     <div class="tab-contents" id="experience">
@@ -223,7 +217,12 @@
             window.scrollTo(top);
         });
     </script>
-
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.getElementById("nav");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
 </body>
 
 </html>
