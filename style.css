@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
 
@@ -10,7 +10,13 @@ html {
 }
 
 body {
-    background: #080808;
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=101010&c2=010101&gt=r&gd=dbb
+*/
+background: #101010;
+background: radial-gradient(at center bottom, #101010, #010101);
+
     color: #fff;
 }
 
@@ -43,7 +49,6 @@ nav {
 
 nav.sticky {
     padding: 5px 100px;
-    background-color: rgba(8,8,8,0.5);
 }
 
 .logo {
@@ -85,7 +90,10 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 30px;
+}
 
+.se-text {
+    font-size: 25px;
 }
 
 .header-text h1 {
@@ -95,6 +103,11 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
     color: #D4AF37;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.header-text h1 span:hover {
+    font-size: 1.1em;
 }
 
 /*-------------------about-----------------*/
@@ -175,7 +188,7 @@ nav ul li a:hover::after {
 }
 
 /*-------------services------------------*/
-/* #services {
+#services {
     padding: 30px 0;
 }
 
@@ -217,7 +230,7 @@ nav ul li a:hover::after {
 .services-list div:hover {
     background-color: #D4AF37;
     transform: translateY(-10px);
-} */
+}
 
 /*---------------portfolio---------------*/
 #portfolio {

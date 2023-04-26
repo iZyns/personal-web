@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/Screenshot_2022-12-07_115840-removebg-preview-removebg-preview.png">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vincent Nathaniel Wirawan</title>
@@ -27,7 +28,6 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <!-- <li><a href="#services">Services</a></li> -->
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -35,8 +35,8 @@
                 <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Software/Security Engineer</p>
-                <h1>Hi, I'm <span>Vincent Wirawan</span><br>from Indonesia</h1>
+                <p class="se-text">Software Engineer</p>
+                <h1>Hello World 👋 <br> I'm <span>Vincent Wirawan</span><br>from Indonesia</h1>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@
                         and
                         problem-solving. But don't let my introverted tendencies fool you - I can be quite the
                         extrovert
-                        with people I know well.Being an international student from Indonesia has allowed me to
+                        with people I know well. Being an international student from Indonesia has allowed me to
                         bring a
                         unique perspective to my work and has taught me the importance of adaptability and an open
                         mind.
@@ -72,16 +72,23 @@
                         <div class="skills-icons">
                             <p>
                                 <i class="devicon-intellij-plain"></i>
-                                <i class="devicon-java-plain"></i>
                                 <i class="devicon-docker-plain"></i>
                                 <i class="devicon-git-plain"></i>
-                                <i class="devicon-csharp-plain"></i>
                                 <i class="devicon-github-original"></i>
                                 <i class="devicon-unity-original"></i>
-                                <i class="devicon-vscode-plain"></i>
                                 <i class="devicon-cplusplus-plain"></i>
+                                <i class="devicon-csharp-plain"></i>
+                                <i class="devicon-html5-plain-wordmark"></i>
+                                <i class="devicon-css3-plain-wordmark"></i>
+                            </br></br>
+                                <i class="devicon-java-plain"></i>
                                 <i class="devicon-linux-plain"></i>
+                                <i class="devicon-mongodb-plain-wordmark"></i>
+                                <i class="devicon-express-original"></i>
+                                <i class="devicon-react-plain"></i>
+                                <i class="devicon-nodejs-plain"></i>
                                 <i class="devicon-apache-plain"></i>
+                                <i class="devicon-javascript-plain"></i>
                             </p>
                         </div>
                     </div>
@@ -111,18 +118,19 @@
                 <div class="work">
                     <img src="images/work1.jpg">
                     <div class="layer">
-                        <h3>Advanced Data Structure</h3>
-                        <p>advanced data structure called SkipList that has multiple levels</p>
-                        <a href="https://github.com/uwbclass/Advanced-Data-Structure-SkipList-"><i
+                        <h3>ED-YOU</h3>
+                        <p>A full stack web app  that aims to provide a global space for people to connect and study together.
+                            The platform consists of different chatrooms, each dedicated to specific courses or subjects, allowing individuals from all over the world to collaborate, share ideas, and learn from each other.</p>
+                        <a href="https://github.com/iZyns/LAHacks2023"><i
                                 class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/work2.jpg">
                     <div class="layer">
-                        <h3>Large Numbers Calculation</h3>
-                        <p>enables calculation for extremely large numbers</p>
-                        <a href="https://github.com/uwbclass/342-p2-iZyns"><i class="fa-solid fa-link"></i></a>
+                        <h3>Movie Management System</h3>
+                        <p>A backend movie Management system that handles storing, histories, and transactions using hashtables and binary search trees</p>
+                        <a href="https://github.com/iZyns/movie-management-system"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -218,7 +226,7 @@
             window.scrollTo(top);
         });
     </script>
-    <script type="text/javascript">
+    <script>
         window.addEventListener("scroll", function () {
             var header = document.getElementById("nav");
             header.classList.toggle("sticky", window.scrollY > 0);
