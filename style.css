@@ -10,13 +10,8 @@ html {
 }
 
 body {
-/*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=101010&c2=010101&gt=r&gd=dbb
-*/
-background: #101010;
-background: radial-gradient(at center bottom, #101010, #010101);
-
+    background: #101010;
+    background: radial-gradient(at center bottom, #101010, #010101);
     color: #fff;
 }
 
@@ -428,7 +423,7 @@ nav .fas {
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 396px) {
     #header {
         background-image: url(images/portrait\ bg.jpg);
     }
@@ -469,6 +464,91 @@ nav .fas {
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+    
+    #bars {
+        position: right;
+        margin-left: 4%;
+    }
+
+    .sub-title {
+        font-size: 40px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .tab-links {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        text-decoration: none;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 396px) {
+    #header {
+        background-image: url(images/portrait\ bg.jpg);
+    }
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #D4AF37;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    
+    #bars {
+        display: none;
     }
 
     .sub-title {
