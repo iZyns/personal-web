@@ -610,7 +610,7 @@ nav .fas {
 /* Styles for the progress bar */
 /* #progress-bar {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
@@ -630,17 +630,19 @@ nav .fas {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 120px;
-    height: 20px;
-    -webkit-mask: radial-gradient(circle closest-side, #D4AF37 94%, #0000) left/20% 100%;
-    background: linear-gradient(#D4AF37 0 0) left/0% 100% no-repeat #C4C4CB;
-    animation: p7 1s linear steps(6);
-}
-
-@keyframes p7 {
-    100% { background-size: 120% 100%; }
-}
+    width: 124px;
+    height: 24px;
+    -webkit-mask: 
+      conic-gradient(from 135deg at top   ,#0000,#000 .5deg 90deg,#0000 90.5deg) 0 0   ,
+      conic-gradient(from -45deg at bottom,#0000,#000 .5deg 90deg,#0000 90.5deg) 0 100%;
+    -webkit-mask-size:25% 50%;
+    -webkit-mask-repeat:repeat-x;
+    background: linear-gradient(#D4AF37 0 0) left/0% 100% no-repeat #E4E4ED;
+    animation: p3 1s infinite linear;
+  }
+  @keyframes p3 {
+    100% {background-size: 100% 100%}
+  }
 
 /* Styles for the loading message */
 /* #loading-message {
