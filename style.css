@@ -627,21 +627,28 @@ nav .fas {
 } */
 
 .custom-loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 124px;
-    height: 24px;
-    -webkit-mask: 
-      conic-gradient(from 135deg at top   ,#0000,#000 .5deg 90deg,#0000 90.5deg) 0 0   ,
-      conic-gradient(from -45deg at bottom,#0000,#000 .5deg 90deg,#0000 90.5deg) 0 100%;
-    -webkit-mask-size:25% 50%;
-    -webkit-mask-repeat:repeat-x;
-    background: linear-gradient(#D4AF37 0 0) left/0% 100% no-repeat #E4E4ED;
-    animation: p3 1s infinite linear;
+    width: 60px;
+    height: 60px;
+    border:15px solid #E4E4ED;
+    border-radius: 50%;
+    position: relative;
+    transform:rotate(45deg);
   }
-  @keyframes p3 {
-    100% {background-size: 100% 100%}
+  .custom-loader::before {
+    content: "";
+    position: absolute;
+    inset:-15px;
+    border-radius: 50%;
+    border:15px solid #D4AF37;
+    animation: p8 1s infinite linear;
+  }
+  
+  @keyframes p8 {
+      0%   {clip-path:polygon(50% 50%,0 0,0    0,0    0   ,0    0   ,0    0   )}
+      25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0   ,100% 0   ,100% 0   )}
+      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+      75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    100%)}
+      100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    0   )}
   }
 
 /* Styles for the loading message */
