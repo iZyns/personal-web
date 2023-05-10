@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
 }
 
@@ -608,24 +608,6 @@ nav .fas {
 }
 
 /* Styles for the progress bar */
-/* #progress-bar {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 20px;
-    background-color: #262626;
-    border-radius: 10px;
-}
-
-#progress {
-    height: 100%;
-    background-color: #D4AF37;
-    border-radius: 10px;
-    animation: grow 1s linear;
-} */
-
 .custom-loader {
     position: absolute;
     top: 50%;
@@ -653,25 +635,4 @@ nav .fas {
       75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    100%)}
       100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    0   )}
   }
-
-/* Styles for the loading message */
-/* #loading-message {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: sans-serif;
-    font-size: 18px;
-    color: #fff;
-} */
-
-/* @keyframes grow {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-} */
 
