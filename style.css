@@ -10,15 +10,15 @@ html {
 }
 
 body {
-    background: #101010;
-    background: radial-gradient(at center bottom, #101010, #010101);
-    color: #fff;
+    background: #FFFFFF;
+    background: radial-gradient(at center, #FFFFFF, #FFEAFF);
+    color: #716ce9;
 }
 
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/pexels-cottonbro-studio-5483071.jpg);
+    background-image: url(images/bckg-img.png);
     background-size: cover;
     background-position: center;
 }
@@ -61,7 +61,7 @@ nav ul li {
 nav ul li a {
     position: relative;
     text-decoration: none;
-    color: #fff;
+    color: #680aff;
     font-size: 18px;
     transition: 0.6s;
 }
@@ -70,7 +70,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #D4AF37;
+    background: #dd75eb;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -97,7 +97,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-    color: #D4AF37;
+    color: #dd75eb;
     transition: font-size 0.3s ease-in-out;
 }
 
@@ -108,7 +108,7 @@ nav ul li a:hover::after {
 /*-------------------about-----------------*/
 #about {
     padding: 80px 0;
-    color: #ababab;
+    color: #716ce9;
 }
 
 .row {
@@ -133,7 +133,7 @@ nav ul li a:hover::after {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: #716ce9;
 }
 
 .tab-titles {
@@ -153,7 +153,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #D4AF37;
+    background: #dd75eb;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -170,7 +170,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: #D4AF37;
+    color: #dd75eb;
     font-size: 14px;
 }
 
@@ -180,51 +180,6 @@ nav ul li a:hover::after {
 
 .tab-contents.active-tab {
     display: block;
-}
-
-/*-------------services------------------*/
-#services {
-    padding: 30px 0;
-}
-
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.services-list div {
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
-}
-
-.services-list div i {
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.services-list div h2 {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.services-list div a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.services-list div:hover {
-    background-color: #D4AF37;
-    transform: translateY(-10px);
 }
 
 /*---------------portfolio---------------*/
@@ -253,10 +208,18 @@ nav ul li a:hover::after {
     transition: transform 0.5s;
 }
 
+.work h3 {
+    color: #fff;
+}
+
+.work p {
+    color: #fff; 
+}
+
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #D4AF37);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #dd75eb);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -279,7 +242,7 @@ nav ul li a:hover::after {
 
 .layer a {
     margin-top: 20px;
-    color: #D4AF37;
+    color: #dd75eb;
     text-decoration: none;
     font-size: 40px;
     line-height: 60px;
@@ -302,16 +265,17 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #D4AF37;
+    border: 1px solid #716ce9;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: #716ce9;
     transition: background 0.5s;
 }
 
 .btn:hover {
-    background: #D4AF37;
+    background: #716ce9;
+    color: #fff;
 }
 
 /*--------------contact----------*/
@@ -328,7 +292,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-    color: #D4AF37;
+    color: #716ce9;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -341,13 +305,13 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #716ce9;
     display: inline-block;
     transition: transform 0.5s;
 }
 
 .skills-icons i:hover {
-    color: #D4AF37;
+    color: #dd75eb;
     transform: translateY(-5px);
 }
 
@@ -359,19 +323,20 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #716ce9;
     display: inline-block;
     transition: transform 0.5s;
 }
 
 .social-icons a:hover {
-    color: #D4AF37;
+    color: #dd75eb;
     transform: translateY(-5px);
 }
 
 .btn.btn2 {
     display: inline-block;
-    background: #D4AF37;
+    background: #716ce9;
+    color: #fff;
 }
 
 .contact-right form {
@@ -384,13 +349,21 @@ form textarea {
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #716ce9;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
 }
+
+form textarea::placeholder {
+    color: #fff;
+  }
+
+  form input::placeholder {
+    color: #fff;
+  }
 
 form .btn2 {
     padding: 14px 60px;
@@ -403,13 +376,14 @@ form .btn2 {
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    background: #262626;
+    background: #716ce9;
     font-weight: 300;
     margin-top: 20px;
+    color: #fff;
 }
 
 .copyright i {
-    color: #D4AF37;
+    color: #fff;
 }
 
 #msg {
@@ -443,7 +417,7 @@ nav .fas {
     }
 
     nav ul {
-        background: #D4AF37;
+        background: #dd75eb;
         position: fixed;
         top: 0;
         right: -200px;
@@ -524,7 +498,7 @@ nav .fas {
     }
 
     nav ul {
-        background: #D4AF37;
+        background: #dd75eb;
         position: fixed;
         top: 0;
         right: -200px;
@@ -624,7 +598,7 @@ nav .fas {
     position: absolute;
     inset:-15px;
     border-radius: 50%;
-    border:15px solid #D4AF37;
+    border:15px solid #dd75eb;
     animation: p8 1s infinite linear;
   }
   
