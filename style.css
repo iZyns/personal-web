@@ -11,8 +11,8 @@ html {
 
 body {
     background: #FFFFFF;
-    background: radial-gradient(at center, #FFFFFF, #FFEAFF);
-    color: #716ce9;
+    /* background: radial-gradient(at center, #FFFFFF, #FFEAFF); */
+    color: #080808;
 }
 
 #header {
@@ -61,7 +61,7 @@ nav ul li {
 nav ul li a {
     position: relative;
     text-decoration: none;
-    color: #680aff;
+    color: #080808;
     font-size: 18px;
     transition: 0.6s;
 }
@@ -70,7 +70,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #dd75eb;
+    background: #716ce9;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -97,7 +97,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-    color: #dd75eb;
+    color: #716ce9;
     transition: font-size 0.3s ease-in-out;
 }
 
@@ -108,7 +108,7 @@ nav ul li a:hover::after {
 /*-------------------about-----------------*/
 #about {
     padding: 80px 0;
-    color: #716ce9;
+    color: #080808;
 }
 
 .row {
@@ -133,7 +133,7 @@ nav ul li a:hover::after {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: #716ce9;
+    color: #080808;
 }
 
 .tab-titles {
@@ -153,7 +153,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #dd75eb;
+    background: #716ce9;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -170,7 +170,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: #dd75eb;
+    color: #716ce9;
     font-size: 14px;
 }
 
@@ -213,13 +213,13 @@ nav ul li a:hover::after {
 }
 
 .work p {
-    color: #fff; 
+    color: #fff;
 }
 
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #dd75eb);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #716ce9);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -242,7 +242,7 @@ nav ul li a:hover::after {
 
 .layer a {
     margin-top: 20px;
-    color: #dd75eb;
+    color: #716ce9;
     text-decoration: none;
     font-size: 40px;
     line-height: 60px;
@@ -305,13 +305,13 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #716ce9;
+    color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
 }
 
 .skills-icons i:hover {
-    color: #dd75eb;
+    color: #716ce9;
     transform: translateY(-5px);
 }
 
@@ -329,7 +329,7 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-    color: #dd75eb;
+    color: #716ce9;
     transform: translateY(-5px);
 }
 
@@ -349,21 +349,13 @@ form textarea {
     width: 100%;
     border: 0;
     outline: none;
-    background: #716ce9;
+    background: #e6e6e6;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
 }
-
-form textarea::placeholder {
-    color: #fff;
-  }
-
-  form input::placeholder {
-    color: #fff;
-  }
 
 form .btn2 {
     padding: 14px 60px;
@@ -376,7 +368,7 @@ form .btn2 {
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    background: #716ce9;
+    background: #080808;
     font-weight: 300;
     margin-top: 20px;
     color: #fff;
@@ -439,7 +431,7 @@ nav .fas {
         left: 25px;
         cursor: pointer;
     }
-    
+
     #bars {
         position: right;
         margin-left: 4%;
@@ -520,7 +512,7 @@ nav .fas {
         left: 25px;
         cursor: pointer;
     }
-    
+
     #bars {
         display: none;
     }
@@ -564,7 +556,7 @@ nav .fas {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #080808;
+    background-color: #fff;
     z-index: 1000;
 }
 
@@ -581,32 +573,45 @@ nav .fas {
     align-items: center;
 }
 
-/* Styles for the progress bar */
 .custom-loader {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 60px;
     height: 60px;
-    border:15px solid #E4E4ED;
+    border: 15px solid #E4E4ED;
     border-radius: 50%;
     position: relative;
-    transform:rotate(45deg);
-  }
-  .custom-loader::before {
+    transform: rotate(45deg);
+}
+
+.custom-loader::before {
     content: "";
     position: absolute;
-    inset:-15px;
+    inset: -15px;
     border-radius: 50%;
-    border:15px solid #dd75eb;
+    border: 15px solid #716ce9;
     animation: p8 1s infinite linear;
-  }
-  
-  @keyframes p8 {
-      0%   {clip-path:polygon(50% 50%,0 0,0    0,0    0   ,0    0   ,0    0   )}
-      25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0   ,100% 0   ,100% 0   )}
-      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
-      75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    100%)}
-      100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    0   )}
-  }
+}
 
+@keyframes p8 {
+    0% {
+        clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
+    }
+
+    25% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+    }
+
+    50% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+    }
+
+    75% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%)
+    }
+
+    100% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0)
+    }
+}
